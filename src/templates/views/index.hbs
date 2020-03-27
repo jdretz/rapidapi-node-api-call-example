@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../public/img/weathericon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{>header}}
+    <div class="main-content container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-5">
+                <form id="info">
+                    <fieldset>
+                        <legend>Compatability Information</legend>
+                        <div class="form-group">
+                            <label for="your-name">Your Name</label>
+                            <input class="form-control" id="your-name" type="text" placeholder="Your Name" aria-placeholder="your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="your-birthday">Your Birthday</label>
+                            <input class="form-control" id="your-birthday" type="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="their-name">Their Name</label>
+                            <input class="form-control" id="their-name" type="text" placeholder="Their Name" aria-placeholder="their name">
+                        </div>
+                        <div class="form-group">
+                            <label for="their-birthday">Their Birthday</label>
+                            <input class="form-control" id="their-birthday" type="date">
+                        </div>
+                        <button class="btn btn-outline-primary" type="submit">Get Yodascope</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <h2>COMPATIBILITY:</h2>
+                <p class="message-1 lead">A Special Match - This could be a Great Match or a Difficult Match</p>
+
+                <h2>YODA COMMENTS:</h2>
+                <blockquote class="message-2">A pessimistic and gloomy attitude towards life also does not help, the fact that they have</blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="/js/app.js"></script>
+  </body>
+</body>
+</html>

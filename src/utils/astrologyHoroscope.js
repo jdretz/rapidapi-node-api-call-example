@@ -1,9 +1,11 @@
 const axios = require("axios");
 
+const BASE_URL = `https://astrology-horoscope.p.rapidapi.com`
+
 module.exports = {
     getCompatibility: (yourName, yourBirthday, theirName, theirBirthday) => axios({
         method:"POST",
-        url :`https://astrology-horoscope.p.rapidapi.com/zodiac_compatibility/result`,
+        url : BASE_URL + `/zodiac_compatibility/result`,
         headers: {
             "content-type":"application/x-www-form-urlencoded",
             "x-rapidapi-host":"astrology-horoscope.p.rapidapi.com",
